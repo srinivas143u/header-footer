@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    background-color: pink;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.header1 li{
+    display: inline-flex;
+}
+.header1 li a{
+    position: relative;
+    margin-left: 10px;
+    left: 20px;
+    top: 10px;
+    color: white;
+}
+.header2{
+    text-align: right;
+}
+.header2 li{
+    display: inline-flex;
+}
+.header2 li a{
+    position: relative;
+    color: white;
+    right: 20px;
+    margin-left: 10px;
+    bottom: 5px;
+}
+.main2{
+    background-color: white;
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    justify-items:flex-start;
+    top: 40px;
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+    height: 30%;
+}
+main {
+    width: 100%;
+    height: 30%;
+}
+.main3 li{
+    display: inline-flex;
+}
+.main3 li a{
+    position: relative;
+    top: 10px;
+    left: 40px;
+    margin-left: 20px;
+    color: black;
+}
+ h1{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+    color: palevioletred;
+
+}
+.main4{
+    text-align: right;
+    position: relative;
+    bottom: 45px;
+    right: 50px;
+}
+.main4 li{
+    display: inline-flex;
+}
+.main4 li a{
+    color: black;
+    margin-left: 20px;
+}
+.dropdown{
+    position: absolute;
+    display: none;
+}
+.main4 :hover .dropdown{
+    display: block;
+}
+.dropdown li{
+    display: block;
+    background-color: pink;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+   right: 10px;
+}
+.dropdown li a{
+    color: white;
+    position: relative;
+    top: 5px;
+}
+.dropdown li:hover{
+    background-color: skyblue;
+}
+.main1 a{
+    position: absolute;
+    font-size: x-large;
+    margin-top: 50px;
+    text-align: center;
+}
+.card{
+    width: 250px;
+    height: 320px;
+}
+.card img{
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+}
+.flipcard{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: pink;
+    border-radius: 20px;
+}
+.card:hover .flipcard{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.icon{
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+.back{
+    background-color: skyblue;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    justify-items: center;
+}
+p{
+    text-align: center;
+    margin-top: 50px;
+}
+.icon1{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+.icon2{
+    text-align: center;
+    color: brown;
+    margin-top: 10px;
+}
+button{
+     width: 100px;
+     height: 30px;
+     position: relative;
+     left: 70px;
+     top: 70px;
+     background-color: pink;
+     border-radius: 10px;
+     border: none;
+}
+button:hover{
+    background-color: skyblue;
+}
+.red{
+    font-size: x-large;
+    position: relative;
+    bottom: 40px;
+    font-weight: bolder;
+}
+.fullcard{
+    display: inline-flex;
+    position: relative;
+    left: 20%;
+    gap: 50px;
+
+}
+.container{
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-0%, -0%);
+    overflow: hidden;
+    left: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.form{
+    position: absolute;
+    left: 67%;
+    margin-top: 10px;
+    width: 30%;
+    height: 45%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px skyblue;
+}
+.form:hover{
+    background-image: url(ic.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3{
+    text-align: center;
+    color: pink;
+}
+label{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 30px;
+}
+input, select{
+    margin-left: 30px;
+    width: 60%;
+    height: 20px;
+}
+input[type=submit]{
+    background-color: pink;
+    height: 30px;
+    width: 85%;
+    border: 0px;
+    border-radius: 20px;
+}
+input[type=submit]:hover{
+    background-color: blue;
+}
+.fontmain{
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+.fontmain a{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+.bike {
+    background-color: pink;
+    position: absolute;
+    left: 40%;
+    
+}
+footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    top: 70px;
+    text-align: right;
+}
+footer a{
+    color: white;
+    position: relative;
+    right: 40px;
+    margin-left: 20px;
+}
+.content{
+    display: inline-flex;
+}
+section{
+   // background-color: blue;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    margin-top: 25%;
+}
+.section1{
+    width: 1500px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.section1 .box{
+    position: relative;
+    width: 280px;
+    background-color: pink;
+    padding: 40px 10px 30px;
+    border: 1px solid black;
+    right: 50px;
+}
+.section1 .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.section1 .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    background-color:  skyblue;
+}
+.section1 .box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-weight: bolder;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+    font-size: 7em;
+}
+.section1 .box:hover h2{
+    opacity: 1;
+    color: slateblue;
+    transform: translateY(-40px);
+}
+.section1 .box h4{
+    position: relative;
+    font-size: 2em;
+    z-index: 2;
+    color: slateblue;
+    transition: 0.5s;
+    margin-left: 30px;
+}
+.section1 .box p{
+    position: relative;
+    z-index: 2;
+    color: black;
+    transition: 0.5s;
+    text-align: center;
+}
+.section1 .box:hover h4,
+.section1 .box p{
+    color: black;
+}
+.blue{
+    position: relative;
+    bottom: 20px;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    left: 50%;
+}
+.box img{
+    height: 300px;
+}
+.box a{
+    position: relative;
+    left: 80px;
+     top: 50px;
+     color: goldenrod;
+}
